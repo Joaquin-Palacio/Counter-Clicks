@@ -1,23 +1,40 @@
-import logo from './logo.svg';
 import './App.css';
+import image from './images/freecodecamp-logo.png';
+import Button from './components/Button';
+import Counter from './components/Counter';
 
 function App() {
+
+  const handleClick = () => {
+
+  }
+
+  const handleRestart = () => {
+
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="freecodecamp-img-container">
+        <img
+          className="freecodecamp-img"
+          src={image}
+          alt="freeCodeCampImage"
+        />
+      </div>
+      <div className="counter-container">
+        <Counter />
+        <Button 
+          text='Click'
+          isBtnClick={true}
+          useClick={handleClick}
+        />
+        <Button 
+          text='Restart'
+          isBtnClick={false}
+          useClick={handleRestart}
+        />
+      </div>
     </div>
   );
 }
