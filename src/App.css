@@ -5,7 +5,7 @@
 }
 
 html, body {
-  background-color: #1b1b32;
+  background-color: #30cec1;
 }
 
 .App {
@@ -16,18 +16,6 @@ html, body {
   padding-top: 15px;
   font-family: Lato, sans-serif;
 } 
-
-.freecodecamp-img-container {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 20px;
-}
-
-.freecodecamp-img {
-  height: 50px;
-}
 
 .counter-container {
   height: 550px;
