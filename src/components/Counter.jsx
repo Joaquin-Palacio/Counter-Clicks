@@ -1,12 +1,12 @@
-import React from 'react'
-import './styles/Counter.css';
+import React from "react";
+import "./styles/Counter.css";
 
-const Counter = ({ numClicks }) => {
+const Counter = ({ totalClicks }) => {
   return (
-    <div className='counter'>
-      { numClicks }
+    <div className="counter">
+      {totalClicks}
     </div>
-  )
-}
+  ) 
+};
 
-export default Counter
+export default Counter;
